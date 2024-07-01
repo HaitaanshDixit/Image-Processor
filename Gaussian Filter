@@ -1,0 +1,8 @@
+# Applying Gausssian filter
+Gauss_filtered = ndimage.gaussian_filter(image, sigma=3)   # Sigma directly propotional to the blur
+
+plt.figure(figsize=(8, 8))
+plt.imshow(Gauss_filtered, cmap='gray')
+plt.title('Gaussian Filtered Image')
+plt.axis('off')
+plt.show()
