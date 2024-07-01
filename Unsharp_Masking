@@ -1,0 +1,9 @@
+#Sharpening the image
+from skimage.filters import unsharp_mask
+sharpened_image = unsharp_mask(image, radius=1, amount=1)
+
+plt.figure(figsize=(8, 8))
+plt.imshow(sharpened_image, cmap='gray')
+plt.title('Sharpened image')
+plt.axis('off')
+plt.show()
