@@ -1,0 +1,9 @@
+# Applying Median filter
+
+Median_filtered = ndimage.median_filter(image, size=1)  
+
+plt.figure(figsize=(8, 8))
+plt.imshow(Median_filtered, cmap='gray')
+plt.title('Median Filtered Image')
+plt.axis('off')
+plt.show()
