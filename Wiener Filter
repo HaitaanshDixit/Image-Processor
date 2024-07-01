@@ -1,0 +1,9 @@
+#Wiener filter
+from scipy.signal import wiener
+wiener_filtered = wiener(image, (5, 5))
+
+plt.figure(figsize=(8, 8))
+plt.imshow(wiener_filtered, cmap='gray')
+plt.title('Enhanced image')
+plt.axis('off')
+plt.show()
