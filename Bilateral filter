@@ -1,0 +1,9 @@
+#Bilateral filter
+from skimage.restoration import denoise_bilateral
+Bilateral_filtered = denoise_bilateral(image, sigma_color=0.05, sigma_spatial=15)
+
+plt.figure(figsize=(8, 8))
+plt.imshow(Bilateral_filtered, cmap='gray')
+plt.title('Bilateral Filtered Image')
+plt.axis('off')
+plt.show()
