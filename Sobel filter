@@ -1,0 +1,15 @@
+# Applying Sobel filter
+
+#Horizontal edges
+Sobel_filtered_x = ndimage.sobel(image, axis=0)
+#Vertical edges
+Sobel_filtered_y = ndimage.sobel(image, axis=1)
+
+#Combining both the edges
+Sobel_filtered = np.hypot(Sobel_filtered_x, Sobel_filtered_y)
+
+plt.figure(figsize=(8, 8))
+plt.imshow(Sobel_filtered, cmap='gray')
+plt.title('Sobel Filtered Image')
+plt.axis('off')
+plt.show()
